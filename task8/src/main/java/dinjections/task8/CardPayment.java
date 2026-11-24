@@ -5,7 +5,7 @@ public class CardPayment implements PaymentService {
     @Override
     public void processPayment()
     {
-        
+        throw new RuntimeException("Card declined!");
     }
 }
 
