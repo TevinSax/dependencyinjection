@@ -1,5 +1,6 @@
 package dinjections.task8;
 
 public interface PaymentService {
-    public void processPayment();
+    public static void processPayment() {
+    }
 }

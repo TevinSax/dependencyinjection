@@ -5,8 +5,16 @@ import org.springframework.stereotype.Component;
 
 public class PaymentController {
     @Autowired
-    private  PaymentService paymentService;
-}
-public void makePayment(){
-    
+    private PaymentService paymentService;
+
+    public static void main(String[] args) {
+    }
+
+    public void makePayment() {
+        try {
+            PaymentService.processPayment();
+        } catch (RuntimeException e) {
+            System.out.println("Error caught: " + e.getMessage());
+        }
+    }
 }
