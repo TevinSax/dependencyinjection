@@ -7,3 +7,6 @@ public class PaymentController {
     @Autowired
     private  PaymentService paymentService;
 }
+public void makePayment(){
+    
+}
